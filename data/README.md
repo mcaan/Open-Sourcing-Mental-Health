@@ -9,13 +9,25 @@ This directory contains the raw and processed data used in the Open Sourcing Men
 
 ## Workflow
 
-Raw OSMH survey data  
-→ `1. OSMH ETL.ipynb`  
-→ `cleaned_data.csv`  
-→ dimensionality reduction  
-→ `full_data.csv` and `PC4_loadings.csv`  
-→ clustering and segmentation  
-→ `clustered_data.csv`  
-→ propensity modeling
+The project follows a sequential analytical pipeline:
 
-Raw and processed datasets are excluded from Git. See the README files within each directory for details.
+```text
+Raw OSMH survey data
+        ↓
+1. ETL
+        ↓
+cleaned_data.csv
+        ↓
+2. Exploratory Data Analysis
+        ↓
+3. Dimensionality Reduction
+   ├── full_data.csv
+   └── PC4_loadings.csv
+        ↓
+4. Clustering & Segmentation
+        ↓
+clustered_data.csv
+        ↓
+5. Propensity Modeling
+
+Generated datasets are stored in data/processed/ and are excluded from Git.
