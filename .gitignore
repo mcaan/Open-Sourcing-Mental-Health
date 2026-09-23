@@ -1,0 +1,29 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Raw and generated data
+data/raw/*
+data/processed/*
+
+# Keep data documentation
+!data/raw/README.md
+!data/processed/README.md
+
+# Environment / secrets
+.env
+.env.*
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
